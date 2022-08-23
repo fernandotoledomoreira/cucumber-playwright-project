@@ -1,0 +1,176 @@
+[
+  {
+    "description": "Eu como um usuário\nQuero cadastrar, consultar e alterar informações de pessoa jurídica via api\nPara armazenar e enviar para outros produtos\n\nCritérios de aceitação:\nTodos os dados imputados devem ser gravados da forma esperada na documentação\nCada execução deverá retornar com código de retorno compatível com o especificado na documentação\nOs contratos dos endpoints devem ser consistidos\nGerar log das execuções para análise",
+    "keyword": "Funcionalidade",
+    "name": "Fluxo redhorn legal person journey",
+    "line": 5,
+    "id": "fluxo-redhorn-legal-person-journey",
+    "tags": [
+      {
+        "name": "@make_all",
+        "line": 4
+      },
+      {
+        "name": "@redhorn",
+        "line": 4
+      },
+      {
+        "name": "@make_redhorn_legal_person",
+        "line": 4
+      },
+      {
+        "name": "@crud_redhorn_legal_person",
+        "line": 4
+      },
+      {
+        "name": "@make_redhorn_legal_person",
+        "line": 4
+      },
+      {
+        "name": "@vision",
+        "line": 4
+      }
+    ],
+    "uri": "features/spec/teste.feature",
+    "elements": [
+      {
+        "id": "fluxo-redhorn-legal-person-journey;validar-a-criação-de-um-legalperson",
+        "keyword": "Scenario",
+        "line": 20,
+        "name": "Validar a criação de um LegalPerson",
+        "tags": [
+          {
+            "name": "@make_all",
+            "line": 4
+          },
+          {
+            "name": "@redhorn",
+            "line": 4
+          },
+          {
+            "name": "@make_redhorn_legal_person",
+            "line": 4
+          },
+          {
+            "name": "@crud_redhorn_legal_person",
+            "line": 4
+          },
+          {
+            "name": "@make_redhorn_legal_person",
+            "line": 4
+          },
+          {
+            "name": "@vision",
+            "line": 4
+          },
+          {
+            "name": "@complete_validation_post_legal_person",
+            "line": 19
+          },
+          {
+            "name": "@post_legal_person",
+            "line": 19
+          },
+          {
+            "name": "@journey_pj",
+            "line": 19
+          },
+          {
+            "name": "@test_ok",
+            "line": 19
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "features/support/hooks.js:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 17,
+            "name": "que possua a API do legal person",
+            "match": {
+              "location": "features/step/step.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 21,
+            "name": "que possua legal person cadastrado",
+            "match": {
+              "location": "features/step/step.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1080000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 22,
+            "name": "consultar dados de legal person cadastrados no kafka e no postgres",
+            "match": {
+              "location": "features/step/step.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 23,
+            "name": "os dados de legal person devem ter sido cadastrados com sucesso",
+            "match": {
+              "location": "features/step/step.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "E ",
+            "line": 24,
+            "name": "o contrato do POST legal person deve ser igual ao esperado",
+            "match": {
+              "location": "features/step/step.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "features/support/hooks.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
