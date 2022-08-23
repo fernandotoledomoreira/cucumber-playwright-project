@@ -1,0 +1,17 @@
+{
+  "name": "playwright_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cucumber-js --parallel 1 -f json:reports/report.json && node report.js && cat reports/report.json"
+  },
+  "keywords": [],
+  "author": "Fernando Toledo Moreira",
+  "license": "",
+  "dependencies": {
+    "@playwright/test": "^1.25.0",
+    "cucumber": "^6.0.7",
+    "cucumber-html-reporter": "^5.5.0"
+  }
+}
